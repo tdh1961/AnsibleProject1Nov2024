@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     stages{
-        stage('zip the file and clean the previous zip'){
+        stage('zip the file and clean the previous artifacts'){
             steps{
                 sh 'rm -rf *.zip || echo ""'
                 sh 'zip -r ansible-${BUILD_ID}.zip * --exclude Jenkinsfile'
