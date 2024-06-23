@@ -1,0 +1,372 @@
+2024-06-04 02:55:17,619 p=1704 u=ec2-user n=ansible | 172.31.19.131 | CHANGED | rc=0 >>
+ 02:55:17 up  5:31,  1 user,  load average: 0.00, 0.00, 0.00
+
+2024-06-04 02:55:17,684 p=1704 u=ec2-user n=ansible | 172.31.24.20 | CHANGED | rc=0 >>
+ 02:55:17 up  5:31,  1 user,  load average: 0.00, 0.00, 0.00
+
+2024-06-04 03:12:45,776 p=2031 u=ec2-user n=ansible | 172.31.19.131 | FAILED | rc=127 >>
+/bin/sh: cat/etc/passwd: No such file or directorynon-zero return code
+
+2024-06-04 03:12:45,907 p=2031 u=ec2-user n=ansible | 172.31.24.20 | FAILED | rc=127 >>
+/bin/sh: 1: cat/etc/passwd: not foundnon-zero return code
+
+2024-06-04 03:13:10,104 p=2114 u=ec2-user n=ansible | 172.31.19.131 | FAILED | rc=127 >>
+/bin/sh: cat/etc/passwd: No such file or directorynon-zero return code
+
+2024-06-04 03:14:43,288 p=2195 u=ec2-user n=ansible | 172.31.19.131 | CHANGED | rc=0 >>
+/home/ec2-user
+
+2024-06-04 03:14:43,376 p=2195 u=ec2-user n=ansible | 172.31.24.20 | CHANGED | rc=0 >>
+/home/ubuntu
+
+2024-06-04 03:15:28,262 p=2280 u=ec2-user n=ansible | 172.31.19.131 | CHANGED | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+libstoragemgmt:x:999:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rngd:x:998:996:Random Number Generator Daemon:/var/lib/rngd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+ec2-instance-connect:x:997:995::/home/ec2-instance-connect:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:996:994::/var/lib/chrony:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+
+2024-06-04 03:19:36,429 p=2464 u=ec2-user n=ansible | 172.31.19.131 | CHANGED | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+operator:x:11:0:operator:/root:/sbin/nologin
+
+2024-06-04 03:32:25,766 p=2711 u=ec2-user n=ansible | 172.31.24.20 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": true,
+    "gid": 1000,
+    "group": "ubuntu",
+    "mode": "0775",
+    "owner": "ubuntu",
+    "path": "/tmp/ansible.text",
+    "size": 4096,
+    "state": "directory",
+    "uid": 1000
+}
+2024-06-04 03:32:25,801 p=2711 u=ec2-user n=ansible | 172.31.19.131 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": true,
+    "gid": 1000,
+    "group": "ec2-user",
+    "mode": "0775",
+    "owner": "ec2-user",
+    "path": "/tmp/ansible.text",
+    "size": 6,
+    "state": "directory",
+    "uid": 1000
+}
+2024-06-04 03:39:44,407 p=2902 u=ec2-user n=ansible | 172.31.24.20 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": true,
+    "gid": 1001,
+    "name": "cloud",
+    "state": "present",
+    "system": false
+}
+2024-06-04 03:39:44,438 p=2902 u=ec2-user n=ansible | 172.31.19.131 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": true,
+    "gid": 1001,
+    "name": "cloud",
+    "state": "present",
+    "system": false
+}
+2024-06-04 03:59:08,598 p=3197 u=ec2-user n=ansible | playbook: play1.yml
+2024-06-04 03:59:59,987 p=3294 u=ec2-user n=ansible | playbook: play1.yml
+2024-06-04 04:00:31,135 p=3374 u=ec2-user n=ansible | PLAY [all] ************************************************************************************************
+2024-06-04 04:00:31,152 p=3374 u=ec2-user n=ansible | TASK [Gathering Facts] ************************************************************************************
+2024-06-04 04:00:33,730 p=3374 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:00:34,813 p=3374 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:00:34,832 p=3374 u=ec2-user n=ansible | TASK [create user Huguette] *******************************************************************************
+2024-06-04 04:00:35,772 p=3374 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-04 04:00:36,000 p=3374 u=ec2-user n=ansible | changed: [172.31.19.131]
+2024-06-04 04:00:36,015 p=3374 u=ec2-user n=ansible | TASK [create group] ***************************************************************************************
+2024-06-04 04:00:36,529 p=3374 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:00:36,599 p=3374 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:00:36,649 p=3374 u=ec2-user n=ansible | TASK [Install packages] ***********************************************************************************
+2024-06-04 04:00:37,899 p=3374 u=ec2-user n=ansible | fatal: [172.31.24.20]: FAILED! => {"changed": false, "msg": "No package matching 'ngnix' is available"}
+2024-06-04 04:00:39,378 p=3374 u=ec2-user n=ansible | fatal: [172.31.19.131]: FAILED! => {"changed": false, "msg": "No package matching 'ngnix' found available, installed or updated", "rc": 126, "results": ["No package matching 'ngnix' found available, installed or updated"]}
+2024-06-04 04:00:39,381 p=3374 u=ec2-user n=ansible | PLAY RECAP ************************************************************************************************
+2024-06-04 04:00:39,383 p=3374 u=ec2-user n=ansible | 172.31.19.131              : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:00:39,384 p=3374 u=ec2-user n=ansible | 172.31.24.20               : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:01:09,489 p=3574 u=ec2-user n=ansible | PLAY [all] ************************************************************************************************
+2024-06-04 04:01:09,502 p=3574 u=ec2-user n=ansible | TASK [Gathering Facts] ************************************************************************************
+2024-06-04 04:01:11,112 p=3574 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:01:11,201 p=3574 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:01:11,215 p=3574 u=ec2-user n=ansible | TASK [create user Huguette] *******************************************************************************
+2024-06-04 04:01:11,888 p=3574 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:01:12,044 p=3574 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:01:12,052 p=3574 u=ec2-user n=ansible | TASK [create group] ***************************************************************************************
+2024-06-04 04:01:12,773 p=3574 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:01:12,792 p=3574 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:01:12,798 p=3574 u=ec2-user n=ansible | TASK [Install packages] ***********************************************************************************
+2024-06-04 04:01:14,770 p=3574 u=ec2-user n=ansible | fatal: [172.31.19.131]: FAILED! => {"changed": false, "msg": "No package matching 'nginx' found available, installed or updated", "rc": 126, "results": ["No package matching 'nginx' found available, installed or updated"]}
+2024-06-04 04:01:31,510 p=3574 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-04 04:01:31,519 p=3574 u=ec2-user n=ansible | TASK [command] ********************************************************************************************
+2024-06-04 04:01:32,055 p=3574 u=ec2-user n=ansible | fatal: [172.31.24.20]: FAILED! => {"changed": false, "cmd": null, "delta": null, "end": null, "msg": "no command given", "rc": 256, "start": null, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2024-06-04 04:01:32,057 p=3574 u=ec2-user n=ansible | PLAY RECAP ************************************************************************************************
+2024-06-04 04:01:32,057 p=3574 u=ec2-user n=ansible | 172.31.19.131              : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:01:32,057 p=3574 u=ec2-user n=ansible | 172.31.24.20               : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:02:53,422 p=3787 u=ec2-user n=ansible | PLAY [all] ************************************************************************************************
+2024-06-04 04:02:53,432 p=3787 u=ec2-user n=ansible | TASK [Gathering Facts] ************************************************************************************
+2024-06-04 04:02:55,244 p=3787 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:02:55,467 p=3787 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:02:55,481 p=3787 u=ec2-user n=ansible | TASK [create user Huguette] *******************************************************************************
+2024-06-04 04:02:56,219 p=3787 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:02:56,301 p=3787 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:02:56,317 p=3787 u=ec2-user n=ansible | TASK [create group] ***************************************************************************************
+2024-06-04 04:02:56,970 p=3787 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:02:57,210 p=3787 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:02:57,218 p=3787 u=ec2-user n=ansible | TASK [Install packages] ***********************************************************************************
+2024-06-04 04:02:58,215 p=3787 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:02:59,184 p=3787 u=ec2-user n=ansible | fatal: [172.31.19.131]: FAILED! => {"changed": false, "msg": "No package matching 'nginx' found available, installed or updated", "rc": 126, "results": ["No package matching 'nginx' found available, installed or updated"]}
+2024-06-04 04:02:59,206 p=3787 u=ec2-user n=ansible | PLAY RECAP ************************************************************************************************
+2024-06-04 04:02:59,207 p=3787 u=ec2-user n=ansible | 172.31.19.131              : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:02:59,207 p=3787 u=ec2-user n=ansible | 172.31.24.20               : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:04:47,817 p=4002 u=ec2-user n=ansible | PLAY [all] ************************************************************************************************
+2024-06-04 04:04:47,826 p=4002 u=ec2-user n=ansible | TASK [Gathering Facts] ************************************************************************************
+2024-06-04 04:04:49,478 p=4002 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:04:49,622 p=4002 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:04:49,641 p=4002 u=ec2-user n=ansible | TASK [create user Huguette] *******************************************************************************
+2024-06-04 04:04:50,264 p=4002 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:04:50,356 p=4002 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:04:50,363 p=4002 u=ec2-user n=ansible | TASK [create group] ***************************************************************************************
+2024-06-04 04:04:50,998 p=4002 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:04:51,096 p=4002 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:04:51,112 p=4002 u=ec2-user n=ansible | TASK [Install packages] ***********************************************************************************
+2024-06-04 04:04:52,176 p=4002 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-04 04:04:53,192 p=4002 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-04 04:04:53,219 p=4002 u=ec2-user n=ansible | PLAY RECAP ************************************************************************************************
+2024-06-04 04:04:53,221 p=4002 u=ec2-user n=ansible | 172.31.19.131              : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:04:53,221 p=4002 u=ec2-user n=ansible | 172.31.24.20               : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-04 04:19:16,529 p=4268 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/ansible-dev/play1.yml': line 14, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      user:
+        name: "{{user_name}}""
+                             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-06-04 04:20:08,118 p=4320 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/ansible-dev/play1.yml': line 14, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      user:
+        name: "{{user_name}}""
+                             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-06-04 04:20:15,475 p=4353 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/ansible-dev/play1.yml': line 14, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      user:
+        name: "{{user_name}}""
+                             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-06-04 04:20:45,402 p=4383 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/ansible-dev/play1.yml': line 14, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      user:
+        name: "{{user_name}}""
+                             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-06-05 02:12:08,682 p=3481 u=ec2-user n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/ec2-user/ansible-dev/play1.yml': line 14, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      user:
+        name: "{{user_name}}""
+                             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-06-05 02:15:05,341 p=3618 u=ec2-user n=ansible | playbook: play1.yml
+2024-06-05 02:15:14,308 p=3662 u=ec2-user n=ansible | PLAY [all] **************************************************************************************************************************
+2024-06-05 02:15:14,355 p=3662 u=ec2-user n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-06-05 02:15:17,367 p=3662 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 02:15:21,220 p=3662 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 02:15:21,233 p=3662 u=ec2-user n=ansible | TASK [create user Huguette] *********************************************************************************************************
+2024-06-05 02:15:21,958 p=3662 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-05 02:15:22,284 p=3662 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 02:15:22,292 p=3662 u=ec2-user n=ansible | TASK [create group] *****************************************************************************************************************
+2024-06-05 02:15:22,880 p=3662 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 02:15:22,917 p=3662 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 02:15:22,967 p=3662 u=ec2-user n=ansible | TASK [Install nginx] ****************************************************************************************************************
+2024-06-05 02:15:24,538 p=3662 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 02:15:25,835 p=3662 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 02:15:25,844 p=3662 u=ec2-user n=ansible | TASK [create group] *****************************************************************************************************************
+2024-06-05 02:15:26,236 p=3662 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-05 02:15:26,318 p=3662 u=ec2-user n=ansible | changed: [172.31.19.131]
+2024-06-05 02:15:26,327 p=3662 u=ec2-user n=ansible | TASK [create file] ******************************************************************************************************************
+2024-06-05 02:15:26,870 p=3662 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-05 02:15:26,912 p=3662 u=ec2-user n=ansible | fatal: [172.31.19.131]: FAILED! => {"changed": false, "msg": "Error, could not touch target: [Errno 2] No such file or directory: b'/var/www/html/index.html'", "path": "/var/www/html/index.html"}
+2024-06-05 02:15:26,927 p=3662 u=ec2-user n=ansible | TASK [create a directory] ***********************************************************************************************************
+2024-06-05 02:15:28,407 p=3662 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-05 02:15:28,423 p=3662 u=ec2-user n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-06-05 02:15:28,423 p=3662 u=ec2-user n=ansible | 172.31.19.131              : ok=5    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-05 02:15:28,424 p=3662 u=ec2-user n=ansible | 172.31.24.20               : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-05 03:00:45,418 p=4041 u=ec2-user n=ansible | PLAY [all] **************************************************************************************************************************
+2024-06-05 03:00:45,427 p=4041 u=ec2-user n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-06-05 03:00:47,011 p=4041 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:00:47,077 p=4041 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:00:47,091 p=4041 u=ec2-user n=ansible | TASK [create user Huguette] *********************************************************************************************************
+2024-06-05 03:00:47,704 p=4041 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:00:47,823 p=4041 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:00:47,832 p=4041 u=ec2-user n=ansible | TASK [create group] *****************************************************************************************************************
+2024-06-05 03:00:48,396 p=4041 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:00:48,464 p=4041 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:00:48,473 p=4041 u=ec2-user n=ansible | TASK [Install nginx] ****************************************************************************************************************
+2024-06-05 03:00:49,972 p=4041 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:00:50,133 p=4041 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:00:50,141 p=4041 u=ec2-user n=ansible | TASK [create group] *****************************************************************************************************************
+2024-06-05 03:00:50,485 p=4041 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:00:50,608 p=4041 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:00:50,617 p=4041 u=ec2-user n=ansible | TASK [create file] ******************************************************************************************************************
+2024-06-05 03:00:51,143 p=4041 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-05 03:00:51,307 p=4041 u=ec2-user n=ansible | fatal: [172.31.19.131]: FAILED! => {"changed": false, "msg": "Error, could not touch target: [Errno 2] No such file or directory: b'/var/www/html/index.html'", "path": "/var/www/html/index.html"}
+2024-06-05 03:00:51,317 p=4041 u=ec2-user n=ansible | TASK [create a directory] ***********************************************************************************************************
+2024-06-05 03:00:51,771 p=4041 u=ec2-user n=ansible | fatal: [172.31.24.20]: FAILED! => {"changed": true, "cmd": ["mkdir", "/tmp/os"], "delta": "0:00:00.002885", "end": "2024-06-05 03:00:51.725390", "msg": "non-zero return code", "rc": 1, "start": "2024-06-05 03:00:51.722505", "stderr": "mkdir: cannot create directory ‘/tmp/os’: File exists", "stderr_lines": ["mkdir: cannot create directory ‘/tmp/os’: File exists"], "stdout": "", "stdout_lines": []}
+2024-06-05 03:00:51,773 p=4041 u=ec2-user n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-06-05 03:00:51,773 p=4041 u=ec2-user n=ansible | 172.31.19.131              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-05 03:00:51,774 p=4041 u=ec2-user n=ansible | 172.31.24.20               : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-05 03:03:36,881 p=4352 u=ec2-user n=ansible | PLAY [all] **************************************************************************************************************************
+2024-06-05 03:03:36,891 p=4352 u=ec2-user n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2024-06-05 03:03:38,565 p=4352 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:03:38,709 p=4352 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:03:38,722 p=4352 u=ec2-user n=ansible | TASK [create user Huguette] *********************************************************************************************************
+2024-06-05 03:03:39,320 p=4352 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:03:39,342 p=4352 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:03:39,350 p=4352 u=ec2-user n=ansible | TASK [create group] *****************************************************************************************************************
+2024-06-05 03:03:39,871 p=4352 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:03:39,899 p=4352 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:03:39,906 p=4352 u=ec2-user n=ansible | TASK [Install nginx] ****************************************************************************************************************
+2024-06-05 03:03:41,427 p=4352 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:03:41,461 p=4352 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:03:41,469 p=4352 u=ec2-user n=ansible | TASK [create group] *****************************************************************************************************************
+2024-06-05 03:03:41,845 p=4352 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:03:41,854 p=4352 u=ec2-user n=ansible | ok: [172.31.19.131]
+2024-06-05 03:03:41,862 p=4352 u=ec2-user n=ansible | TASK [create index file] ************************************************************************************************************
+2024-06-05 03:03:42,418 p=4352 u=ec2-user n=ansible | changed: [172.31.24.20]
+2024-06-05 03:03:42,439 p=4352 u=ec2-user n=ansible | fatal: [172.31.19.131]: FAILED! => {"changed": false, "msg": "Error, could not touch target: [Errno 2] No such file or directory: b'/var/www/html/index.html'", "path": "/var/www/html/index.html"}
+2024-06-05 03:03:42,449 p=4352 u=ec2-user n=ansible | TASK [create directory] *************************************************************************************************************
+2024-06-05 03:03:42,779 p=4352 u=ec2-user n=ansible | ok: [172.31.24.20]
+2024-06-05 03:03:42,796 p=4352 u=ec2-user n=ansible | PLAY RECAP **************************************************************************************************************************
+2024-06-05 03:03:42,796 p=4352 u=ec2-user n=ansible | 172.31.19.131              : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-05 03:03:42,796 p=4352 u=ec2-user n=ansible | 172.31.24.20               : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
