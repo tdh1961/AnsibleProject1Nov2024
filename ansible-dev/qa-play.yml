@@ -18,8 +18,9 @@
 
     - name: create Log file
       file:
-      path: /opt/qa/spg/spg.log
-      state: touch
+        path: /opt/qa/spg/spg.log
+        state: touch
+
     - name: start and enabled daemon
       systemd_service:
         name: docker
