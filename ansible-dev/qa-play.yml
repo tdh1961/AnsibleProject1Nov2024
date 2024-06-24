@@ -22,7 +22,7 @@
         state: touch
 
     - name: start and enabled daemon
-      systemd_service:
+      systemd:
         name: docker
         state: started
         enabled: yes
