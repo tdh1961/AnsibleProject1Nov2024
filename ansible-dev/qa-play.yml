@@ -1,0 +1,29 @@
+---
+- hosts: wb
+  become: true
+  become_user: root
+  ignore_errors: yes
+  gather_facts: yes
+  tasks: 
+    - name: install packages
+      yum: 
+        state: present
+        name : ['docker','wget', 'unzip','lsof','passwd','java-11*',]
+
+    - name: create directory
+      file:
+        path: /opt/qa/spg
+        state: directory
+        mode: '0755'
+
+    - name: create Log file
+      file:
+      path: /opt/qa/spg/spg.log
+      state: touch
+    - name: start and enabled daemon
+      systemd_service:
+        name: docker
+        state: started
+        enabled: yes
+
+
