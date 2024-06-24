@@ -10,12 +10,26 @@
         path: /opt/qa/spg/*.jar
         state: absent
 
-    - name: get the PID
-      shell: lsof -i :8082
+    - name: Get the PID
+      shell: lsof -i :8081
       register: pid_output
 
-    - name: kill running app
-      shell: kill -9 pid_output.stdout
+    - name: Check if port 8082 is in use
+      set_fact:
+        port_in_use: "{{ pid_output.rc == 0 }}"
+
+    - name: Extract the PID if port is in use
+      set_fact:
+        pid: "{{ pid_output.stdout.split()[9] }}"
+      when: port_in_use
+
+    - name: Display the PID if port is in use
+      debug:
+        var: pid
+      when: port_in_use
+
+    - name: Kill running app
+      shell: kill -9 {{ pid_output.stdout }}
       when: pid_output.stdout != ''
 
     - name: Download New Artfact
@@ -26,7 +40,7 @@
         url_passwd: password
 
     - name: run the app
-      shell: nohup java -jar /opt/qa/spg/*.jar /opt/qa/spg.log 2>&1 &
+      shell: nohup java -jar /opt/qa/spg/*.jar > /opt/qa/spg.log 2>&1 &
 
 
     
